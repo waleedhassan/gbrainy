@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, GbrainyActivity!</string>
-    <string name="app_name">Gbrainy</string>
+    <string name="app_name">gbrainy</string>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_black">#FF000000</color>
+    <string name="choose">Choose one to get Start</string>
+    <string name="game_all">"  All"</string>
+    <string name="game_logic">"  Logic"</string>    
+    <string name="game_calculation">"  Calculation"</string>
+    <string name="game_memory">"  Memory"</string>
+    <string name="game_verbal">"  Verbal"</string>
+    <string name="help">"  Help"</string>
+  
 </resources>

@@ -1,12 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/ic_notebook_background">
+	
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" 
+		android:id="@+id/title_layout"
+		android:orientation="vertical" 
+		android:background="@drawable/rounded_background"
+		>
+		<TextView android:text="gbrainy-android 1.0" 
+				  android:id="@+id/textView2" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content"
+				  android:textSize="25dip"
+				  android:textColor="@color/color_black"
+				  android:layout_gravity="center"
+				  android:textStyle="bold"
+				  >
+		</TextView>
+	</LinearLayout>
+	
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/linearLayout1"
+		android:orientation="vertical" 
+		android:background="@drawable/rounded_background"
+		android:layout_weight="7"
+		android:gravity="center_horizontal"
+		android:layout_marginBottom="2dip">
+		<TextView android:text="@string/choose" 
+				  android:id="@+id/choose" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content"
+				  android:textColor="@color/color_black"
+				  android:textSize="25dip"
+				  android:layout_gravity="left">
+		</TextView>
+		<ScrollView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:scrollbars="vertical|horizontal">
+		<TableLayout android:id="@+id/game_list"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:stretchColumns="*" android:layout_margin="3dip">
+		<TableRow>	
+		
+		</TableRow>
+		<TableRow>
+			
+		<Button android:text="@string/game_all" 							
+				android:drawableLeft="@drawable/ic_allgames"
+				android:id="@+id/game_all"				
+				style="@style/game_buttons">
+		</Button>
+		</TableRow>
+		<TableRow>
+		<Button android:text="@string/game_logic" 				
+				android:drawableLeft="@drawable/ic_logic_games"
+				android:id="@+id/game_logic"
+				style="@style/game_buttons">
+		</Button>
+		</TableRow>
+		
+		<TableRow>
+		<Button android:text="@string/game_calculation" 				
+				android:drawableLeft="@drawable/ic_math_games"
+				android:id="@+id/game_calc"
+				style="@style/game_buttons">
+		</Button>
+		</TableRow>
+		
+		<TableRow>
+		<Button android:text="@string/game_memory" 				
+				android:drawableLeft="@drawable/ic_memory_games" 
+				android:id="@+id/game_memory"
+				style="@style/game_buttons">
+		</Button>
+		</TableRow>
+		
+		<TableRow>
+		<Button android:text="@string/game_verbal" 				
+				android:drawableLeft="@drawable/ic_verbal_games" 
+				android:id="@+id/game_verbal"
+				style="@style/game_buttons"
+				>
+		</Button>	
+		</TableRow>	
+		</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+	
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" 
+		android:id="@+id/linearLayout2"
+		android:orientation="vertical"
+		android:background="@drawable/rounded_background"
+		>
+		<TableLayout android:id="@+id/game_list"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:stretchColumns="*" android:layout_margin="3dip">
+		<Button android:text="@string/help" 
+				android:id="@+id/button1" 				
+				android:drawableLeft="@drawable/ic_help"
+				style="@style/game_buttons">
+		</Button>
+		</TableLayout>
+	</LinearLayout>
+	
 </LinearLayout>
